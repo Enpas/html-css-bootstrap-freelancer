@@ -32,8 +32,45 @@ footer .ep-footer-top a:hover {
   text-decoration: none;
 }
 
+.btn:hover {
+  background-color: #15BC9C;
+  opacity: 0.8;
+}
+
 h2 {
   text-transform: uppercase;
+  font-weight: 600;
+}
+
+.row-star {
+  position: relative;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.row-star.ep-bg-white::before,
+.row-star.ep-bg-white::after {
+  background-color: #FFF;
+}
+
+.row-star::before {
+  content: '';
+  position: absolute;
+  left: 27%;
+  width: 20%;
+  height: 3px;
+  margin-top: 10px;
+  background-color: #000;
+}
+
+.row-star::after {
+  content: '';
+  position: absolute;
+  right: 27%;
+  width: 20%;
+  height: 3px;
+  margin-top: 10px;
+  background-color: #000;
 }
 
 /* HEADER */
@@ -46,26 +83,27 @@ h2 {
 }
 
 .navbar-default {
-  height: 80px;
+  height: 70px;
   background-color: #2C3D50;
   border: none;
   margin: 0 auto;
 }
 
 .navbar-default .navbar-brand {
+  color: #FFF;
   font-size: 24px;
-  padding: 10px 0 20px 25px; 
+  padding: 8px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #FFF;
 }
 
-.ep-header-top nav .collapse ul li a{
+.ep-header-top nav .collapse ul li a {
   text-decoration: none;
   font-size: 14px;
+  font-weight: 600;
   margin-top: 10px;
   text-transform: uppercase;
-  color: #FFF;
+  color:#FFF
 }
 
 .ep-header-top nav button.navbar-toggle {
@@ -85,8 +123,13 @@ h2 {
   background-color: #15BC9C;
 }
 
+.ep-header-top nav .collapse.navbar-collapse {
+  background-color: #2C3D50;
+}
+
 .ep-header-bottom {
-  margin-top: 80px;
+  margin-top: 60px;
+  margin-bottom: -20px;
 }
 
 .ep-jumbotron {
@@ -98,6 +141,7 @@ h2 {
 .ep-jumbotron .ep-jumbo-img {
   width: 150px;
   height: 150px;
+  margin-top: 30px;
   display: inline-block;
 }
 
@@ -131,17 +175,18 @@ main #contact form textarea {
 }
 
 main #contact form textarea {
-  padding-top: 15px;
+  padding-top: 30px;
   padding-bottom: 100px;
 }
 
-main #contact [placeholder] {
+::placeholder {
   color: #000;
 }
 /* FOOTER */
 footer .ep-footer-top {
   background-color: #39546D;
   padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 footer .ep-footer-top li a {
@@ -162,6 +207,7 @@ footer .ep-footer-top a {
 
 footer .ep-footer-bottom {
   line-height: 60px;
+  padding-top: 5px;
   vertical-align: middle;
   background-color: #2C3D50;
 }
