@@ -1,4 +1,8 @@
 /* GLOBAL */
+html {
+  scroll-behavior: smooth;
+}
+
 .ep-padding-50 {
   padding: 50px;
 }
@@ -20,28 +24,69 @@
   background-color: #15BC9C;
  }
 
+.ep-header-top .navbar-default a:hover,
+.ep-header-top .collapse ul li a:hover,
+footer .ep-footer-top a:hover {
+  color: #15BC9C;
+  border-color: #15BC9C;
+  text-decoration: none;
+}
+
 h2 {
   text-transform: uppercase;
 }
 
 /* HEADER */
 .ep-header-top {
-  height: 80px;
-  line-height: 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
   background-color: #2C3D50;
 }
 
-.ep-header-top h1 a{
-  font-size: 24px;
-  text-decoration: none;
-  vertical-align: middle;
+.navbar-default {
+  height: 80px;
+  background-color: #2C3D50;
+  border: none;
+  margin: 0 auto;
 }
 
-nav ul li a{
+.navbar-default .navbar-brand {
+  font-size: 24px;
+  padding: 10px 0 20px 25px; 
   text-decoration: none;
-  font-size: 14px;
   text-transform: uppercase;
   color: #FFF;
+}
+
+.ep-header-top nav .collapse ul li a{
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.ep-header-top nav button.navbar-toggle {
+  margin-top: 20px;
+}
+
+.ep-header-top nav button.navbar-toggle span.icon-bar {
+  background-color: #FFF;
+}
+
+.ep-header-top nav button.navbar-toggle:hover {
+  background-color: transparent;
+  border-color: #15BC9C;
+}
+
+.ep-header-top nav button.navbar-toggle:hover span.icon-bar {
+  background-color: #15BC9C;
+}
+
+.ep-header-bottom {
+  margin-top: 80px;
 }
 
 .ep-jumbotron {
@@ -66,20 +111,33 @@ nav ul li a{
 }
 
 /* MAIN */
-main #contact .btn {
-  background-color: #15BC9C;
-}
-
-main #about .btn {
-  background-color: #15BC9C;
-  border-color: #FFF;
-}
-
-#portfolio .ep-box img{
+main #portfolio .ep-box img{
   width: 100%;
   margin-bottom: 20px;
 }
 
+main .btn.btn-success {
+  background-color: #15BC9C;
+  border-color: #FFF;
+  margin-top: 5px;
+}
+
+main #contact form input,
+main #contact form textarea {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid #CCC;
+}
+
+main #contact form textarea {
+  padding-top: 15px;
+  padding-bottom: 100px;
+}
+
+main #contact [placeholder] {
+  color: #000;
+}
 /* FOOTER */
 footer .ep-footer-top {
   background-color: #39546D;
