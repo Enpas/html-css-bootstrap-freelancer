@@ -6,57 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous"/>
     <title>Bootstrap Freelancer</title>
   </head>
   <body>
 
-    <!-- CON-FLUID -->
-    <div class="container-fluid">
-
       <!-- HEADER -->
       <header>
 
-        <div class="row header ep-padding-10 debug">
-          <div class="col-sm-3 col-xs-6 debug">
-            <div class="logo">
-              logo
+        <!-- TOP-FIXED -->
+      <div class="ep-header-top">
+        <div class="container">
+          <div class="row text-nowrap text-uppercase">
+            <div class="col-xs-4">
+              <h1>
+                <a class="text-white" href="index.html">start bootstrap</a>
+              </h1>
             </div>
-          </div>
-          <div class="col-sm-3 col-sm-offset-6 hidden-xs debug">
-            <div class="menu">
-              menu
+            <div class="col-xs-8 text-right hidden-xs">
+              <nav>
+                <ul class="list-unstyled list-inline text-white">
+                  <li><a href="#">portfolio</a></li>
+                  <li><a href="#">about</a></li>
+                  <li><a href="#">contact</a></li>
+                </ul>
+              </nav>
             </div>
-          </div>
-          <div class="col-xs-1 col-xs-push-5 visible-xs-inline debug">
-            <div class="menu">
-              mn
+            <div class="col-xs-8 text-right visible-xs-inline">
+              <div class="menu">m</div>
             </div>
           </div>
         </div>
+      </div>
+      <!-- /TOP-FIXED -->
   
-        <div class="row jumbotron debug text-center">
-          <div class="jumb-img text-center">
-            img
-          </div>
-          <div class="col-xs-12 text-center">
-            <h1>
-              start bootstrap
-            </h1>
-          </div>
-          <div class="col-xs-12 text-center">
-            <div class="row description ep-padding-30 text-center">
-              <div class="col-xs-6 col-sm-4 mb-20">
-                graphic artist
+      <!-- JUMBOTRON -->
+      <div class="ep-header-bottom ep-light-green">
+        <div class="container">
+          <div class="ep-jumbotron">
+            <div class="row text-center text-uppercase text-white">
+              <div class="ep-jumbo-img text-center">
+                <img src="img/avatar.svg" alt="avatar"/>
               </div>
-              <div class="col-xs-6 col-sm-4 mb-20">
-                web designer
+              <div class="col-xs-12 text-center">
+                <h2>Start Bootstrap</h2>
               </div>
-              <div class="col-xs-12 col-sm-4 mb-20">
-                illustrator
+              <div class="col-xs-12 text-center">
+                <div class="row ep-description text-center">
+                  <div class="col-xs-6 col-sm-4">Graphic Artist</div>
+                  <div class="col-xs-6 col-sm-4">Web Designer</div>
+                  <div class="col-xs-12 col-sm-4">Illustrator</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <!-- /JUMBOTRON -->
 
       </header>
       <!-- /HEADER -->
@@ -64,109 +70,196 @@
       <!-- MAIN -->
       <main>
 
-        <div class="row portfolio ep-padding-10">
-          <div class="col-xs-12 title text-center">
-            <h3>
-              portfolio
-            </h3>
+        <section id="portfolio" class="ep-padding-50">
+          <div class="container">
+            <div class="row text-center mb-20">
+              <div class="col-xs-12">
+                <h2>Portfolio</h2>
+                <p>riga brutta</p>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                  <div class="ep-box">
+                    <img class="img-rounded" src="img/cabin.png" alt="cabin"/>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                  <div class="ep-box">
+                    <img class="img-rounded" src="img/cake.png" alt="cake"/>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                  <div class="ep-box">
+                    <img class="img-rounded" src="img/circus.png" alt="circus"/>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                  <div class="ep-box">
+                    <img class="img-rounded" src="img/game.png" alt="game"/>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                  <div class="ep-box">
+                    <img class="img-rounded" src="img/safe.png" alt="safe"/>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                  <div class="ep-box">
+                    <img class="img-rounded" src="img/submarine.png" alt="submarine"/>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="clearfix"></div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="image">img1</div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="image">img2</div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="image">img3</div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="image">img4</div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="image">img5</div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="image">img6</div>
-          </div>
-        </div>
+        </section>
 
-        <div class="row about ep-padding-20">
-          <div class="col-xs-12 title text-center">
-            <h3>
-              About
-            </h3>
+       <!-- ABOUT -->
+       <section id="about" class="ep-padding-50 text-white ep-light-green">
+        <div class="ep-wrapper-60">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-12 text-center">
+                <h2>About</h2>
+                <p>riga brutta</p>
+              </div>
+            </div>
           </div>
-          <div class="clearfix"></div>
-          <div class="col-sm-6 about-text mb-20">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam omnis vitae eaque optio quam asperiores ex beatae iure mollitia nisi, minima ipsum, soluta.
-          </div>
-          <div class="col-sm-6 about-text mb-20">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam omnis vitae eaque optio quam asperiores ex beatae iure mollitia nisi, minima ipsum, soluta.
-          </div>
-          <div class="col-xs-12 text-center">
-            <button class="btn btn-default mb-20">
-              Download
-            </button>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-6 about-text mb-20">
+                <p>
+                  Freelancer is a free bootstrap theme created by Start Bootstrap. The
+                  download includes the complete source files including HTML, CSS and
+                  JavaScript as well as optional LESS stylesheets for easy
+                  customization.
+                </p>
+              </div>
+              <div class="col-sm-6 about-text mb-20">
+                <p>
+                  Wether you're a student looking to showcase your work, a
+                  professional looking to attract clients, or a graphic artist looking
+                  to share your projects, this template is a perfect starting point.
+                </p>
+              </div>
+              <div class="col-xs-12 text-center">
+                <button class="btn btn-success">
+                  <i class="fas fa-download"></i> Download
+                </button>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
+      <!-- /ABOUT -->
 
-        <div class="row contact ep-padding-20">
-          <div class="col-xs-12 title text-center">
-            <h3>
-              contact me
-            </h3>
+      <!-- CONTACT -->
+      <section id="contact" class="ep-padding-50">
+        <div class="ep-wrapper-60">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-12 title text-center">
+                <h2>Contact Me</h2>
+                <p>riga brutta</p>
+              </div>
+            </div>
           </div>
-          <div class="clearfix"></div>
-          <div class="col-xs-12 fm mb-20">
-            Name
-          </div>
-          <div class="col-xs-12 fm mb-20">
-            Email Address
-          </div>
-          <div class="col-xs-12 fm mb-20">
-            Phone Number
-          </div>
-          <div class="col-xs-12 msg mb-20">
-            Message
-          </div>
-          <div class="col-xs-12">
-            <button class="btn btn-success mb-20">
-              Send
-            </button>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-12">
+                <form>
+                  
+                    <p>
+                      Name
+                    </p>
+                  
+                 
+                    <p>
+                      Email Address
+                    </p>
+                
+                 
+                    <p>
+                      Phone Number
+                    </p>
+                  
+                  
+                    <p>
+                      Message
+                    </p>
+                
+                  <div class="col-xs-12">
+                    <button type="submit" class="btn btn-success mb-20">
+                      Send
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
+      <!-- /CONTACT -->
 
       </main>
       <!-- /MAIN -->
 
-      <div class="clearfix"></div>
 
       <!-- FOOTER -->
       <footer>
 
-        <div class="row location-footer ep-padding-10">
-          <div class="col-md-4 footer-text mb-20">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur temporibus error debitis architecto reiciendis tempore. Ducimus quibusdam doloremque voluptate amet!
+        <footer class="text-center text-white">
+
+          <!-- FOOTER TOP -->
+          <div class="ep-footer-top">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <h3>location</h3>
+                  <address>2215 John Daniel Drive Clark MO, 54243</address>
+                </div>
+                <div class="col-md-4">
+                  <h3>around the web</h3>
+                  <ul class="list-inline">
+                    <li>
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <h3>about freelancer</h3>
+                  <p>
+                    Freelance is a free to use, open source Bootstrap theme created by
+                    <a href="#">Start Bootstrap</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-md-4 footer-text mb-20">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur temporibus error debitis architecto reiciendis tempore. Ducimus quibusdam doloremque voluptate amet!
+          <!-- /FOOTER TOP -->
+    
+          <!-- FOOTER BOTTOM -->
+          <div class="ep-footer-bottom">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12">
+                  <p>Copyright &copy; Your Website 2021</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-md-4 footer-text mb-20">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur temporibus error debitis architecto reiciendis tempore. Ducimus quibusdam doloremque voluptate amet!
-          </div>
-        </div>
-        <div class="row copyrights-footer text-center">
-          <p class="copyright">
-            Copyrights
-          </p>
-        </div>
+          <!-- /FOOTER BOTTOM -->
 
       </footer>
       <!-- /FOOTER -->
-
-    </div>
-     <!-- /CON-FLUID -->
     
   </body>
 </html>
